@@ -1,0 +1,10 @@
+black
+pytest
+pylint==2.15
+wikipedia
+pytest-cov
+fire
+fastapi
+uvicorn
+requests
+pydantic
