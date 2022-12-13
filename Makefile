@@ -3,7 +3,7 @@ install:
 		pip install -r requirements.txt
 
 format:
-	black *.py mylib/*.py
+	black *.py
 
 lint:
 	pylint --disable=R,C main.py
@@ -12,4 +12,4 @@ test:
 	python -m pytest -vv --cov=mylib --cov=main test_*.py
 	
 all: install format lint test deploy
-pre-push: format lint test
+pre-push: format lint
